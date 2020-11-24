@@ -1,0 +1,161 @@
+/****************************************************************
+ *																*		
+ * 						      代码库							*
+ *                        www.dmaku.com							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+/****************************************************************
+ *																*		
+ * 						      代码库							*
+ *                        www.dmaku.com							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+html {
+  background: #111;
+}
+
+body {
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.7, 0.7);
+            transform: rotate(0deg) scale(0.7, 0.7);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(1, 1);
+            transform: rotate(180deg) scale(1, 1);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(0.7, 0.7);
+            transform: rotate(360deg) scale(0.7, 0.7);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.7, 0.7);
+            transform: rotate(0deg) scale(0.7, 0.7);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(1, 1);
+            transform: rotate(180deg) scale(1, 1);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(0.7, 0.7);
+            transform: rotate(360deg) scale(0.7, 0.7);
+  }
+}
+@-webkit-keyframes spin2 {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.7, 0.7);
+            transform: rotate(0deg) scale(0.7, 0.7);
+  }
+  50% {
+    -webkit-transform: rotate(-180deg) scale(1, 1);
+            transform: rotate(-180deg) scale(1, 1);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg) scale(0.7, 0.7);
+            transform: rotate(-360deg) scale(0.7, 0.7);
+  }
+}
+@keyframes spin2 {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.7, 0.7);
+            transform: rotate(0deg) scale(0.7, 0.7);
+  }
+  50% {
+    -webkit-transform: rotate(-180deg) scale(1, 1);
+            transform: rotate(-180deg) scale(1, 1);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg) scale(0.7, 0.7);
+            transform: rotate(-360deg) scale(0.7, 0.7);
+  }
+}
+div {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+div:before, div:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+}
+
+.dots {
+  width: 200px;
+  height: 200px;
+  box-shadow: -106px 0 0 -98px #14c8ff, -106px 0 4px -97px #0014f0, 106px 0 0 -98px #14c8ff, 106px 0 4px -97px #0014f0, 0 -106px 0 -98px #14c8ff, 0 -106px 4px -97px #0014f0, 0 106px 0 -98px #14c8ff, 0 106px 4px -97px #0014f0, 0 0 4px 4px #111, 0 0 4px 8px rgba(0, 30, 250, 0.2);
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
+}
+.dots:before, .dots:after {
+  box-shadow: -106px 0 0 -98px #14c8ff, -106px 0 4px -97px #0014f0, 106px 0 0 -98px #14c8ff, 106px 0 4px -97px #0014f0, 0 -106px 0 -98px #14c8ff, 0 -106px 4px -97px #0014f0, 0 106px 0 -98px #14c8ff, 0 106px 4px -97px #0014f0;
+}
+.dots:before {
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+}
+.dots:after {
+  -webkit-transform: rotate(65deg);
+          transform: rotate(65deg);
+}
+
+.dots2 {
+  width: 216px;
+  height: 216px;
+  box-shadow: -114px 0 0 -106px #14c8ff, -114px 0 4px -105px #0014f0, 114px 0 0 -106px #14c8ff, 114px 0 4px -105px #0014f0, 0 -114px 0 -106px #14c8ff, 0 -114px 4px -105px #0014f0, 0 114px 0 -106px #14c8ff, 0 114px 4px -105px #0014f0, 0 0 4px 4px #111, 0 0 4px 8px rgba(0, 30, 250, 0.2);
+  -webkit-animation: spin2 4s linear infinite;
+          animation: spin2 4s linear infinite;
+}
+.dots2:before, .dots2:after {
+  box-shadow: -114px 0 0 -106px #14c8ff, -114px 0 4px -105px #0014f0, 114px 0 0 -106px #14c8ff, 114px 0 4px -105px #0014f0, 0 -114px 0 -106px #14c8ff, 0 -114px 4px -105px #0014f0, 0 114px 0 -106px #14c8ff, 0 114px 4px -105px #0014f0;
+}
+.dots2:before {
+  -webkit-transform: rotate(73deg);
+          transform: rotate(73deg);
+}
+.dots2:after {
+  -webkit-transform: rotate(122deg);
+          transform: rotate(122deg);
+}
+
+.dots3 {
+  width: 232px;
+  height: 232px;
+  box-shadow: -122px 0 0 -114px #14c8ff, -122px 0 4px -113px #0014f0, 122px 0 0 -114px #14c8ff, 122px 0 4px -113px #0014f0, 0 -122px 0 -114px #14c8ff, 0 -122px 4px -113px #0014f0, 0 122px 0 -114px #14c8ff, 0 122px 4px -113px #0014f0, 0 0 4px 4px #111, 0 0 4px 8px rgba(0, 30, 250, 0.2);
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
+}
+.dots3:before, .dots3:after {
+  box-shadow: -122px 0 0 -114px #14c8ff, -122px 0 4px -113px #0014f0, 122px 0 0 -114px #14c8ff, 122px 0 4px -113px #0014f0, 0 -122px 0 -114px #14c8ff, 0 -122px 4px -113px #0014f0, 0 122px 0 -114px #14c8ff, 0 122px 4px -113px #0014f0;
+}
+.dots3:before {
+  -webkit-transform: rotate(39deg);
+          transform: rotate(39deg);
+}
+.dots3:after {
+  -webkit-transform: rotate(242deg);
+          transform: rotate(242deg);
+}
